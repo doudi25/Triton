@@ -3,9 +3,9 @@ This repository will track my journey as I code kernels in Triton every day. Tri
 Day 1 :  Triton_Addition_Kernel.ipynb
 summary : perform vector addition with triton kernel
 - skills : 
-  - Basics of gpu architecture
-  - How kernel launch in terms of thread blocks and threads
-  - How to assign the mask to correcty write the kernel 
-  - Allocating memory with torch.empty_like()
+ - Basics of GPU Architecture
+ - How a Kernel is Launched in Terms of Thread Blocks and Threads
+ - How to Assign the Mask to Correctly Write the Kernel
+ - Allocating Memory with torch.empty_like()
 - references :
   - Triton tutorial website 
