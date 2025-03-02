@@ -4,7 +4,7 @@ This repository will track my journey as I code kernels in Triton every day. Tri
 Implemented a basic element-wise addition kernel using Triton to add two vectors. This serves as an introductory exercise to understand Triton's programming model.
 
 -Day 2: SwiGLU Kernel
-Developed a kernel for the SwiGLU activation function, an advanced activation function that can enhance model performance. This function combines the Swish and Gated Linear Unit (GLU) activations.
+  Developed a kernel for the SwiGLU activation function, an advanced activation function that can enhance model performance. This function combines the Swish and Gated Linear Unit (GLU) activations.
 
 -Day 3: RGB to Grayscale
 Created a kernel to convert RGB images to grayscale, a common preprocessing step in image analysis. This operation reduces the complexity of image data by eliminating color information.
