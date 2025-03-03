@@ -50,5 +50,7 @@ Implemented a kernel to calculate the L2 norm (Euclidean norm) of a vector, usef
 
 ## Day 17: Inner Product
 Created a kernel to compute the inner product (dot product) of two vectors, fundamental in various linear algebra computations. This operation is essential in numerous machine learning algorithms.
+## Day 18: Outer Product 
+Developed a kernel to compute the outer product of two vectors, producing a matrix where each element is the product of elements from the input vectors. This operation is crucial in linear algebra, with applications in machine learning models, tensor operations, and feature space expansions.
 
 
