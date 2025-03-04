@@ -53,5 +53,5 @@ Created a kernel to compute the inner product (dot product) of two vectors, fund
 ## Day 18: Outer Product 
 Developed a kernel to compute the outer product of two vectors, producing a matrix where each element is the product of elements from the input vectors. This operation is crucial in linear algebra, with applications in machine learning models, tensor operations, and feature space expansions.
 ## Day 19: Dropout Kernel
-Implemented a custom dropout kernel using Triton, designed to randomly zero out elements in a tensor with a given probability pb. The surviving elements are scaled by 1/(1-pb) to maintain the expected value of the output — a crucial step in training neural networks to prevent overfitting.
+Implemented a custom dropout kernel using Triton, designed to randomly zero out elements in a tensor with a given probability pb. The surviving elements are scaled by 1/(1-pb) to maintain the expected value of the output.
 The kernel is optimized with autotuning, testing various block sizes and warp configurations to maximize GPU efficiency. Wrapped in a simple PyTorch function, it seamlessly integrates with CUDA tensors for fast and flexible dropout operations.
