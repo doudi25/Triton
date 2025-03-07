@@ -55,3 +55,5 @@ Developed a kernel to compute the outer product of two vectors, producing a matr
 ## Day 19: Dropout Kernel
 Implemented a custom dropout kernel using Triton, designed to randomly zero out elements in a tensor with a given probability pb. The surviving elements are scaled by 1/(1-pb) to maintain the expected value of the output.
 The kernel is optimized with autotuning, testing various block sizes and warp configurations to maximize GPU efficiency. Wrapped in a simple PyTorch function, it seamlessly integrates with CUDA tensors for fast and flexible dropout operations.
+## Day 20: Sum Kernel
+Built a Triton-based kernel to compute the sum of elements along dim=1 of a tensor. This operation is key for tasks like feature aggregation or dimensionality reduction in machine learning. Leveraging Triton's GPU optimizations, the kernel ensures efficient parallel execution and memory handling.
