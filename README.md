@@ -57,3 +57,5 @@ Implemented a custom dropout kernel using Triton, designed to randomly zero out 
 The kernel is optimized with autotuning, testing various block sizes and warp configurations to maximize GPU efficiency. Wrapped in a simple PyTorch function, it seamlessly integrates with CUDA tensors for fast and flexible dropout operations.
 ## Day 20: Sum Kernel
 Built a Triton-based kernel to compute the sum of elements along dim=1 of a tensor. This operation is key for tasks like feature aggregation or dimensionality reduction in machine learning. Leveraging Triton's GPU optimizations, the kernel ensures efficient parallel execution and memory handling.
+## Day 21: 
+I developed a highly optimized 2D convolution kernel, a key operation in image processing and computer vision for extracting spatial features from images. My implementation significantly outperforms PyTorch's native CUDA kernel by strategically parallelizing computations across all dimensions—batch size, number of kernels, channels, height, and width—resulting in superior performance.
