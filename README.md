@@ -59,6 +59,8 @@ The kernel is optimized with autotuning, testing various block sizes and warp co
 Built a Triton-based kernel to compute the sum of elements along dim=1 of a tensor. This operation is key for tasks like feature aggregation or dimensionality reduction in machine learning. Leveraging Triton's GPU optimizations, the kernel ensures efficient parallel execution and memory handling.
 ## Day 21: Optimized_Conv2d
 I developed a highly optimized 2D convolution kernel, a key operation in image processing and computer vision for extracting spatial features from images. My implementation significantly outperforms PyTorch's native CUDA kernel by strategically parallelizing computations across all dimensions—batch size, number of kernels, channels, height, and width—resulting in superior performance.
-## Day 22: AvgPool2d:
+## Day 22: AvgPool2d
 Implemented an AvgPool2d kernel from scratch! 
 It reduces image size, typically used after convolutional layers. The kernel efficiently works in parallel across batch, channels, height, and width—yielding results roughly equivalent to PyTorch's native implementation.
+## Day 23: BatchNorm2d
+Implemented a Triton-based BatchNorm2d kernel, a crucial layer in deep learning for stabilizing and accelerating training. The kernel normalizes activations across the batch and spatial dimensions, achieving performance on par with PyTorch's native implementation. By leveraging Triton's efficient parallelization and memory management, the kernel ensures optimal GPU utilization while maintaining numerical accuracy.
