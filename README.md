@@ -64,3 +64,5 @@ Implemented an AvgPool2d kernel from scratch!
 It reduces image size, typically used after convolutional layers. The kernel efficiently works in parallel across batch, channels, height, and width—yielding results roughly equivalent to PyTorch's native implementation.
 ## Day 23: BatchNorm2d
 Implemented a Triton-based BatchNorm2d kernel, a crucial layer in deep learning for stabilizing and accelerating training. The kernel normalizes activations across the batch and spatial dimensions, achieving performance on par with PyTorch's native implementation. By leveraging Triton's efficient parallelization and memory management, the kernel ensures optimal GPU utilization while maintaining numerical accuracy.
+## Day 24: LayerNorm
+I implemented a Triton-based LayerNorm kernel, a fundamental layer in deep learning that normalizes activations across feature dimensions. By parallelizing computations across batches and features, the kernel efficiently reduces variance and stabilizes training.
