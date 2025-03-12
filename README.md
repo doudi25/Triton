@@ -68,3 +68,6 @@ Implemented a Triton-based BatchNorm2d kernel, a crucial layer in deep learning 
 I implemented a Triton-based LayerNorm kernel, a fundamental layer in deep learning that normalizes activations across feature dimensions. By parallelizing computations across batches and features, the kernel efficiently reduces variance and stabilizes training.
 ## Day 25: Silu 
 I implemented a Triton-based SiLU (Sigmoid Linear Unit) kernel, covering both forward and backward passes. The kernel utilizes the maximum number of warps per streaming multiprocessor (64 warps) on Tesla T4 GPUs, ensuring full parallelism and optimal hardware utilization. Additionally, I tested the kernel's compatibility with PyTorch's autograd engine, confirming smooth integration for automatic differentiation.
+## Day 25: LayerNorm_backward
+I implemented the Triton-based LayerNorm backward pass, specifically calculating gradients for the learnable weight parameter 𝛾 and beta . The kernel leverages parallel reductions to efficiently compute the sum of element-wise products between the output gradients and the normalized inputs,parallelization is applied across batch size and feature dimension for maximum efficiency.
+
