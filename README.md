@@ -70,4 +70,5 @@ I implemented a Triton-based LayerNorm kernel, a fundamental layer in deep learn
 I implemented a Triton-based SiLU (Sigmoid Linear Unit) kernel, covering both forward and backward passes. The kernel utilizes the maximum number of warps per streaming multiprocessor (64 warps) on Tesla T4 GPUs, ensuring full parallelism and optimal hardware utilization. Additionally, I tested the kernel's compatibility with PyTorch's autograd engine, confirming smooth integration for automatic differentiation.
 ## Day 26: LayerNorm_backward
 I implemented the Triton-based LayerNorm backward pass, specifically calculating gradients for the learnable weight parameter 𝛾 and beta . The kernel leverages parallel reductions to efficiently compute the sum of element-wise products between the output gradients and the normalized inputs,parallelization is applied across batch size and feature dimension for maximum efficiency.
-
+## Day 27: GELU
+I implemented a Triton-based GeLU (Gaussian Error Linear Unit) forward pass, using the approximation version for faster computation. This approach balances accuracy and performance by leveraging a smooth, non-linear activation function while avoiding expensive operations like the error function (erf). The kernel efficiently utilizes parallelism across batches and feature dimensions.
